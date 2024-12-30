@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -O2 -Iinclude
+CXXFLAGS = -Oz -Iinclude
 SRC_DIR = ./src
 INCLUDE_DIR = ./include
 SRC = $(wildcard $(SRC_DIR)/*.cpp)

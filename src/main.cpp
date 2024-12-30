@@ -129,7 +129,7 @@ void checkArgs(int argc, char *argv[]) {
         if (fs::exists(dst)) {
           cout << "\033[1;37m" << "Removing template: " << "\033[1;33m" << dst.filename().string() << "\033[0m ";
           fs::remove_all(dst);
-          cout << "\033[1;92m" << "Done!" << "\033[0m" << endl;
+          cout << "\033[1;92m" << "| Done!" << "\033[0m" << endl;
         } else {
           cout << "\033[1;31m" << "Template doesn't exist: " << "\033[0m" << dst.string() << endl;
         }
@@ -168,7 +168,7 @@ void checkArgs(int argc, char *argv[]) {
           exit(1);
         }
       }
-      cout << "\033[1;37m" << "Done!" << "\033[0m" << endl;
+      cout << "\033[1;32m" << "Done!" << "\033[0m" << endl;
     }
   }
 }
